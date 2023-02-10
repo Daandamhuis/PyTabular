@@ -467,6 +467,9 @@ model = pytabular.Tabular(CONNECTION_STR)
 # Initiate the Docs 
 docs = pytabular.ModelDocumenter(model)
 
+# Generate the pages. 
+docs.generate_documentation_pages()
+
 # Save docs to the default location
 docs.save_documentation()
 </code></pre>
@@ -481,14 +484,15 @@ model = pytabular.Tabular(CONNECTION_STR)
 docs = pytabular.ModelDocumenter(model)
 
 # Set the translation for documentation to an available culture.
-docs = pytabular.ModelDocumenter(model)
-
 # By setting the Tranlsations to `True` it will check if it exists and if it does, 
 # it will start using the translations for the docs
-docs.set_transalation(
-        enable_translations=True, 
+docs.set_translations(
+        enable_translations = True, 
         culture = 'en-US'
     )
+
+# Generate the pages. 
+docs.generate_documentation_pages()
 
 # Save docs to the default location
 docs.save_documentation()
@@ -505,6 +509,9 @@ docs = pytabular.ModelDocumenter(
     model = model,
     friendly_name = &quot;Adventure Works&quot;
 )
+
+# Generate the pages. 
+docs.generate_documentation_pages()
 
 # Save docs to the default location
 docs.save_documentation()
@@ -558,5 +565,5 @@ docs.save_documentation()
 
 <!--
 MkDocs version : 1.4.2
-Build Date UTC : 2023-02-10 15:09:25.377045+00:00
+Build Date UTC : 2023-02-10 15:18:44.666064+00:00
 -->
