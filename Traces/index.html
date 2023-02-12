@@ -69,19 +69,19 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#basetrace">BaseTrace</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#update">.update</a>
-    </li>
     <li class="toctree-l3"><a class="reference internal" href="#build">.build</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#start">.start</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#drop">.drop</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#init">.init</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#stop">.stop</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#add">.add</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#drop">.drop</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#start">.start</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#update">.update</a>
     </li>
         </ul>
     </li>
@@ -161,17 +161,6 @@
 It's recommended to use the out of the box traces built.
 It's on the roadmap to have an intuitive way to build traces for users.</p>
 <p><strong>Methods:</strong></p>
-<h3 id="update">.update</h3>
-<p><a href="https://github.com/Curts0/PyTabular/blob/master/pytabular/tabular_tracing.py/#L117">source</a></p>
-<pre><code class="language-python">.update()
-</code></pre>
-<hr />
-<p>Runs on init. Syncs with Server.</p>
-<p><strong>Returns</strong></p>
-<ul>
-<li><strong>None</strong>  : Returns None.
-    Unless unsuccessful then it will return the error from Server.</li>
-</ul>
 <h3 id="build">.build</h3>
 <p><a href="https://github.com/Curts0/PyTabular/blob/master/pytabular/tabular_tracing.py/#L72">source</a></p>
 <pre><code class="language-python">.build()
@@ -183,28 +172,6 @@ and attempt to build the Trace.</p>
 <p><strong>Returns</strong></p>
 <ul>
 <li><strong>bool</strong>  : True if successful</li>
-</ul>
-<h3 id="start">.start</h3>
-<p><a href="https://github.com/Curts0/PyTabular/blob/master/pytabular/tabular_tracing.py/#L130">source</a></p>
-<pre><code class="language-python">.start()
-</code></pre>
-<hr />
-<p>Call when you want to start the trace.</p>
-<p><strong>Returns</strong></p>
-<ul>
-<li><strong>None</strong>  : Returns None.
-    Unless unsuccessful then it will return the error from Server.</li>
-</ul>
-<h3 id="drop">.drop</h3>
-<p><a href="https://github.com/Curts0/PyTabular/blob/master/pytabular/tabular_tracing.py/#L150">source</a></p>
-<pre><code class="language-python">.drop()
-</code></pre>
-<hr />
-<p>Call when you want to drop the trace.</p>
-<p><strong>Returns</strong></p>
-<ul>
-<li><strong>None</strong>  : Returns None. Unless unsuccessful,
-    then it will return the error from Server.</li>
 </ul>
 <h3 id="init">.<strong>init</strong></h3>
 <p><a href="https://github.com/Curts0/PyTabular/blob/master/pytabular/tabular_tracing.py/#L29">source</a></p>
@@ -248,6 +215,39 @@ and attempt to build the Trace.</p>
 <p><strong>Returns</strong></p>
 <ul>
 <li><strong>int</strong>  : Return int of placement in Server.Traces.get_Item(int).</li>
+</ul>
+<h3 id="drop">.drop</h3>
+<p><a href="https://github.com/Curts0/PyTabular/blob/master/pytabular/tabular_tracing.py/#L150">source</a></p>
+<pre><code class="language-python">.drop()
+</code></pre>
+<hr />
+<p>Call when you want to drop the trace.</p>
+<p><strong>Returns</strong></p>
+<ul>
+<li><strong>None</strong>  : Returns None. Unless unsuccessful,
+    then it will return the error from Server.</li>
+</ul>
+<h3 id="start">.start</h3>
+<p><a href="https://github.com/Curts0/PyTabular/blob/master/pytabular/tabular_tracing.py/#L130">source</a></p>
+<pre><code class="language-python">.start()
+</code></pre>
+<hr />
+<p>Call when you want to start the trace.</p>
+<p><strong>Returns</strong></p>
+<ul>
+<li><strong>None</strong>  : Returns None.
+    Unless unsuccessful then it will return the error from Server.</li>
+</ul>
+<h3 id="update">.update</h3>
+<p><a href="https://github.com/Curts0/PyTabular/blob/master/pytabular/tabular_tracing.py/#L117">source</a></p>
+<pre><code class="language-python">.update()
+</code></pre>
+<hr />
+<p>Runs on init. Syncs with Server.</p>
+<p><strong>Returns</strong></p>
+<ul>
+<li><strong>None</strong>  : Returns None.
+    Unless unsuccessful then it will return the error from Server.</li>
 </ul>
 <hr />
 <h2 id="refreshtrace">RefreshTrace</h2>
