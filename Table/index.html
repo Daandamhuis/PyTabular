@@ -61,13 +61,13 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#pytable">PyTable</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#row_count">.row_count</a>
-    </li>
     <li class="toctree-l3"><a class="reference internal" href="#related">.related</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#init">.init</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#refresh">.refresh</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#row_count">.row_count</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#last_refresh">.last_refresh</a>
     </li>
@@ -81,9 +81,9 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#refresh_1">.refresh</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#last_refresh_1">.last_refresh</a>
-    </li>
     <li class="toctree-l3"><a class="reference internal" href="#find_zero_rows">.find_zero_rows</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#last_refresh_1">.last_refresh</a>
     </li>
         </ul>
     </li>
@@ -162,17 +162,6 @@
 if it is unable to find it in the default attributes.
 This let's you also easily check the default .Net properties.</p>
 <p><strong>Methods:</strong></p>
-<h3 id="row_count">.row_count</h3>
-<p><a href="https://github.com/Curts0/PyTabular/blob/master/pytabular/table.py/#L69">source</a></p>
-<pre><code class="language-python">.row_count()
-</code></pre>
-<hr />
-<p>Method to return count of rows.</p>
-<p>Simple Dax Query: <code>EVALUATE {COUNTROWS('Table Name')}</code>.</p>
-<p><strong>Returns</strong></p>
-<ul>
-<li><strong>int</strong>  : Number of rows using <code>COUNTROWS</code>.</li>
-</ul>
 <h3 id="related">.related</h3>
 <p><a href="https://github.com/Curts0/PyTabular/blob/master/pytabular/table.py/#L102">source</a></p>
 <pre><code class="language-python">.related()
@@ -207,6 +196,17 @@ table.</p>
 <p><strong>Returns</strong></p>
 <ul>
 <li><strong>DataFrame</strong>  : Returns pandas dataframe with some refresh details.</li>
+</ul>
+<h3 id="row_count">.row_count</h3>
+<p><a href="https://github.com/Curts0/PyTabular/blob/master/pytabular/table.py/#L69">source</a></p>
+<pre><code class="language-python">.row_count()
+</code></pre>
+<hr />
+<p>Method to return count of rows.</p>
+<p>Simple Dax Query: <code>EVALUATE {COUNTROWS('Table Name')}</code>.</p>
+<p><strong>Returns</strong></p>
+<ul>
+<li><strong>int</strong>  : Number of rows using <code>COUNTROWS</code>.</li>
 </ul>
 <h3 id="last_refresh">.last_refresh</h3>
 <p><a href="https://github.com/Curts0/PyTabular/blob/master/pytabular/table.py/#L89">source</a></p>
@@ -270,6 +270,12 @@ dynamically building a query with the
 </code></pre>
 <hr />
 <p>Refreshes all <code>PyTable</code>(s) in class.</p>
+<h3 id="find_zero_rows">.find_zero_rows</h3>
+<p><a href="https://github.com/Curts0/PyTabular/blob/master/pytabular/table.py/#L152">source</a></p>
+<pre><code class="language-python">.find_zero_rows()
+</code></pre>
+<hr />
+<p>Returns PyTables class of tables with zero rows queried.</p>
 <h3 id="last_refresh_1">.last_refresh</h3>
 <p><a href="https://github.com/Curts0/PyTabular/blob/master/pytabular/table.py/#L162">source</a></p>
 <pre><code class="language-python">.last_refresh(
@@ -296,12 +302,6 @@ Example to add to model
     If group_partition == True and the table has
     multiple partitions, then df.groupby(by["tables"]).max()</li>
 </ul>
-<h3 id="find_zero_rows">.find_zero_rows</h3>
-<p><a href="https://github.com/Curts0/PyTabular/blob/master/pytabular/table.py/#L152">source</a></p>
-<pre><code class="language-python">.find_zero_rows()
-</code></pre>
-<hr />
-<p>Returns PyTables class of tables with zero rows queried.</p>
               
             </div>
           </div><footer>
