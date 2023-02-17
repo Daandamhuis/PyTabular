@@ -71,13 +71,13 @@ class ModelDocumenter:
         # Documentation Parts
         self.general_page: str = str()
         self.general_page_url: str = general_page_url
-        
+
         self.measure_page: str = str()
         self.measure_page_url: str = measure_page_url
-        
+
         self.roles_page: str = str()
         self.roles_page_url: str = roles_page_url
-        
+
         self.table_page: str = str()
         self.table_folder: str = table_folder
 
@@ -218,7 +218,6 @@ class ModelDocumenter:
         Returns:
             None
         """
-
         if self.save_path.exists():
             logger.info(
                 f"Path exists -> Generating documentation for {self.friendly_name}"
@@ -553,12 +552,12 @@ class ModelDocumenter:
 
     def generate_general_info_file(self) -> str:
         """Index.md file for the model.
-        
+
         Basic text for an introduction page.
 
         Returns:
             str: Markdown str for info page
-        """        
+        """
         return "\n".join(
             [
                 "---",
