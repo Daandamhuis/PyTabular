@@ -63,13 +63,13 @@
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#related">.related</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#last_refresh">.last_refresh</a>
-    </li>
     <li class="toctree-l3"><a class="reference internal" href="#row_count">.row_count</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#refresh">.refresh</a>
+    <li class="toctree-l3"><a class="reference internal" href="#last_refresh">.last_refresh</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#init">.init</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#refresh">.refresh</a>
     </li>
         </ul>
     </li>
@@ -168,17 +168,6 @@ This let's you also easily check the default .Net properties.</p>
 </code></pre>
 <hr />
 <p>Returns tables with a relationship with the table in question.</p>
-<h3 id="last_refresh">.last_refresh</h3>
-<p><a href="https://github.com/Curts0/PyTabular/blob/master/pytabular/table.py/#L89">source</a></p>
-<pre><code class="language-python">.last_refresh()
-</code></pre>
-<hr />
-<p>Will query each partition for the last refresh time.</p>
-<p>Then will select the max value to return.</p>
-<p><strong>Returns</strong></p>
-<ul>
-<li><strong>datetime</strong>  : Last refresh time in datetime format</li>
-</ul>
 <h3 id="row_count">.row_count</h3>
 <p><a href="https://github.com/Curts0/PyTabular/blob/master/pytabular/table.py/#L69">source</a></p>
 <pre><code class="language-python">.row_count()
@@ -190,19 +179,16 @@ This let's you also easily check the default .Net properties.</p>
 <ul>
 <li><strong>int</strong>  : Number of rows using <code>COUNTROWS</code>.</li>
 </ul>
-<h3 id="refresh">.refresh</h3>
-<p><a href="https://github.com/Curts0/PyTabular/blob/master/pytabular/table.py/#L79">source</a></p>
-<pre><code class="language-python">.refresh(
-   *args, **kwargs
-)
+<h3 id="last_refresh">.last_refresh</h3>
+<p><a href="https://github.com/Curts0/PyTabular/blob/master/pytabular/table.py/#L89">source</a></p>
+<pre><code class="language-python">.last_refresh()
 </code></pre>
 <hr />
-<p>Use this to refresh the PyTable in question.</p>
-<p>You can pass through any extra parameters. For example:
-<code>Tabular().Tables['Table Name'].Refresh(trace = None)</code></p>
+<p>Will query each partition for the last refresh time.</p>
+<p>Then will select the max value to return.</p>
 <p><strong>Returns</strong></p>
 <ul>
-<li><strong>DataFrame</strong>  : Returns pandas dataframe with some refresh details.</li>
+<li><strong>datetime</strong>  : Last refresh time in datetime format</li>
 </ul>
 <h3 id="init">.<strong>init</strong></h3>
 <p><a href="https://github.com/Curts0/PyTabular/blob/master/pytabular/table.py/#L26">source</a></p>
@@ -218,6 +204,20 @@ table.</p>
 <ul>
 <li><strong>object</strong> (Table) : The actual .Net table.</li>
 <li><strong>model</strong> (Tabular) : The model that the table is in.</li>
+</ul>
+<h3 id="refresh">.refresh</h3>
+<p><a href="https://github.com/Curts0/PyTabular/blob/master/pytabular/table.py/#L79">source</a></p>
+<pre><code class="language-python">.refresh(
+   *args, **kwargs
+)
+</code></pre>
+<hr />
+<p>Use this to refresh the PyTable in question.</p>
+<p>You can pass through any extra parameters. For example:
+<code>Tabular().Tables['Table Name'].Refresh(trace = None)</code></p>
+<p><strong>Returns</strong></p>
+<ul>
+<li><strong>DataFrame</strong>  : Returns pandas dataframe with some refresh details.</li>
 </ul>
 <hr />
 <h2 id="pytables">PyTables</h2>
