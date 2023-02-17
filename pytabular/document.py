@@ -639,4 +639,3 @@ class ModelDocumenter:
             .replace("[", "")
             .replace("]", "")
         )
-    
