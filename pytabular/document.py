@@ -70,18 +70,16 @@ class ModelDocumenter:
 
         # Documentation Parts
         self.general_page: str = str()
-        self.measure_page: str = str()
-        self.table_page: str = str()
-        self.roles_page: str = str()
-        self.category_page: str = str()
-
-        self.category_file_name: str = "_category_.yml"
         self.general_page_url: str = general_page_url
+        
+        self.measure_page: str = str()
         self.measure_page_url: str = measure_page_url
-        self.table_folder: str = table_folder
+        
+        self.roles_page: str = str()
         self.roles_page_url: str = roles_page_url
-        # self.table_page_url: str = table_page_url
-        # self.column_page_url: str = column_page_url
+        
+        self.table_page: str = str()
+        self.table_folder: str = table_folder
 
         # Generate an url friendly name for the model / folder
         self.friendly_name: str = self.set_url_friendly_name(self.model_name)
@@ -111,7 +109,6 @@ class ModelDocumenter:
         """Generate Documentation for each specific part of the model."""
         self.measure_page = self.generate_markdown_measure_page()
         self.table_page = self.generate_markdown_table_page()
-        # self.category_page = self.generate_category_file()
         self.general_page = self.generate_general_info_file()
 
     def get_object_caption(self, object_name: str, object_parent: str) -> str:
@@ -314,7 +311,7 @@ class ModelDocumenter:
         prev_display_folder = ""
         markdown_template = [
             "---",
-            "sidebar_position: 3",
+            "sidebar_position: 1",
             "title: Measures",
             "description: This page contains all measures for "
             f"the {self.model.Name} model, including the description, "
@@ -454,7 +451,7 @@ class ModelDocumenter:
         """
         markdown_template = [
             "---",
-            "sidebar_position: 1",
+            "sidebar_position: 2",
             "sidebar_label: Tables",
             "description: This page contains all columns with "
             f"tables for {self.model.Name}, including the description, "
@@ -555,6 +552,13 @@ class ModelDocumenter:
         return "\n".join(markdown_template)
 
     def generate_general_info_file(self) -> str:
+        """Index.md file for the model.
+        
+        Basic text for an introduction page.
+
+        Returns:
+            str: Markdown str for info page
+        """        
         return "\n".join(
             [
                 "---",
