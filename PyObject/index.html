@@ -6,6 +6,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Connect to your Tabular models in Python!">
+      
       
       
         <link rel="canonical" href="https://curts0.github.io/PyTabular/PyObject/">
@@ -17,7 +19,7 @@
         <link rel="next" href="../PyTables/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.13">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.15">
     
     
       
@@ -25,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ffa9267a.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.113286f1.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
@@ -147,6 +149,18 @@
 </div>
     
     
+      <div class="md-header__source">
+        <a href="https://github.com/Curts0/PyTabular" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Curts0/PyTabular
+  </div>
+</a>
+      </div>
+    
   </nav>
   
 </header>
@@ -179,6 +193,18 @@
     </a>
     PyTabular
   </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Curts0/PyTabular" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Curts0/PyTabular
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -324,14 +350,7 @@
       
         <li class="md-nav__item">
   <a href="#pytabular.object.PyObject" class="md-nav__link">
-    pytabular.object.PyObject
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pytabular.object.PyObject.__getattr__" class="md-nav__link">
-    __getattr__()
+    PyObject
   </a>
   
 </li>
@@ -346,6 +365,13 @@
         <li class="md-nav__item">
   <a href="#pytabular.object.PyObject.__rich_repr__" class="md-nav__link">
     __rich_repr__()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pytabular.object.PyObject.__getattr__" class="md-nav__link">
+    __getattr__()
   </a>
   
 </li>
@@ -576,6 +602,21 @@
   
   
     <li class="md-nav__item">
+      <a href="../tabular_tracing/" class="md-nav__link">
+        Running Traces
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../document/" class="md-nav__link">
         Documenting Model
       </a>
@@ -624,14 +665,7 @@
       
         <li class="md-nav__item">
   <a href="#pytabular.object.PyObject" class="md-nav__link">
-    pytabular.object.PyObject
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pytabular.object.PyObject.__getattr__" class="md-nav__link">
-    __getattr__()
+    PyObject
   </a>
   
 </li>
@@ -650,6 +684,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#pytabular.object.PyObject.__getattr__" class="md-nav__link">
+    __getattr__()
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -664,6 +705,9 @@
                 
                   
 
+  
+  
+
 
   <h1>PyObject</h1>
 
@@ -673,7 +717,7 @@
 <a id="pytabular.object.PyObject"></a>
   <div class="doc doc-contents first">
       <p class="doc doc-class-bases">
-        Bases: <code><span title="abc.ABC">ABC</span></code></p>
+        Bases: <code><a class="autorefs autorefs-external" title="abc.ABC" href="https://docs.python.org/3/library/abc.html#abc.ABC">ABC</a></code></p>
 
   
       <p>The main parent class for your (Tables, Columns, Measures, Partitions, etc.).</p>
@@ -789,33 +833,6 @@ This will let you pull properties from the main .Net class.</p>
 
 
 
-
-<div class="doc doc-object doc-function">
-
-
-
-<h2 id="pytabular.object.PyObject.__getattr__" class="doc doc-heading">
-<code class="highlight language-python"><span class="fm">__getattr__</span><span class="p">(</span><span class="n">attr</span><span class="p">)</span></code>
-
-</h2>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>Searches in <code>self._object</code>.</p>
-
-      <details class="quote">
-        <summary>Source code in <code>pytabular/object.py</code></summary>
-        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-53">53</a></span>
-<span class="normal"><a href="#__codelineno-0-54">54</a></span>
-<span class="normal"><a href="#__codelineno-0-55">55</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-53" name="__codelineno-0-53"></a><span class="k">def</span> <span class="fm">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">):</span>
-<a id="__codelineno-0-54" name="__codelineno-0-54"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Searches in `self._object`.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-55" name="__codelineno-0-55"></a>    <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_object</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
-      </details>
-  </div>
-
-</div>
 
 <div class="doc doc-object doc-function">
 
@@ -941,6 +958,33 @@ It will also begin to build out a default <code>rich</code> table display.</p>
 <span class="normal"><a href="#__codelineno-0-51">51</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-49" name="__codelineno-0-49"></a><span class="k">def</span> <span class="nf">__rich_repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <a id="__codelineno-0-50" name="__codelineno-0-50"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;See [Rich Repr](https://rich.readthedocs.io/en/stable/pretty.html#rich-repr-protocol).&quot;&quot;&quot;</span>
 <a id="__codelineno-0-51" name="__codelineno-0-51"></a>    <span class="n">Console</span><span class="p">()</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_display</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="pytabular.object.PyObject.__getattr__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__getattr__</span><span class="p">(</span><span class="n">attr</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Searches in <code>self._object</code>.</p>
+
+      <details class="quote">
+        <summary>Source code in <code>pytabular/object.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-53">53</a></span>
+<span class="normal"><a href="#__codelineno-0-54">54</a></span>
+<span class="normal"><a href="#__codelineno-0-55">55</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-53" name="__codelineno-0-53"></a><span class="k">def</span> <span class="fm">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">):</span>
+<a id="__codelineno-0-54" name="__codelineno-0-54"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Searches in `self._object`.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-55" name="__codelineno-0-55"></a>    <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_object</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
       </details>
   </div>
